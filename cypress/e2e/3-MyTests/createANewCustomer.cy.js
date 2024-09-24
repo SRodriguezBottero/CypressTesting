@@ -16,7 +16,9 @@ describe('Create a new customer in Automation Store', () => {
         
         cy.get('#AccountFrm_lastname').type('Rodriguez')
 
-        cy.get('#AccountFrm_email').type('peperodriguez2@email.com')
+        const randomNumber = Math.floor(Math.random() * 10000)
+
+        cy.get('#AccountFrm_email').type(`peperodriguez${randomNumber}@email.com`)
 
         cy.get('#AccountFrm_address_1').type('Luis Alberto de Herrera 521')
 
@@ -28,7 +30,7 @@ describe('Create a new customer in Automation Store', () => {
 
         cy.get('#AccountFrm_postcode').type('15908')
 
-        cy.get('#AccountFrm_loginname').type('PepeRodriguez2')
+        cy.get('#AccountFrm_loginname').type(`PepeRodriguez${randomNumber}`)
 
         cy.get('#AccountFrm_password').type('SuperPassword')
 
