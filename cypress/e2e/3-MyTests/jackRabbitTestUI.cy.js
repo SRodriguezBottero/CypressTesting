@@ -57,9 +57,9 @@ describe('My First Test in JRPay UI', () => {
         
         cy.get('#legalEntityOrganizationType').select('Association Incorporated').should('have.value', '1')
 
-        cy.get('#firstName').type('Name')
+        cy.get('#firstName').type('Cypress')
 
-        cy.get('#lastName').type('Lastname')
+        cy.get('#lastName').type('Rodriguez')
 
         cy.get('#companyEmail').type('sebastiandario.rodriguez@endava.com')
 
